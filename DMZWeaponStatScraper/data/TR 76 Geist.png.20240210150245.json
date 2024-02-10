@@ -1,0 +1,12 @@
+{
+  "filename": "TR 76 Geist.png",
+  "stats": {
+    "Damage": 0.502092063,
+    "FireRate": 0.5983264,
+    "Range": 0.418410033,
+    "Accuracy": 0.447698742,
+    "RecoilControl": 0.42259413,
+    "Mobility": 0.556485355,
+    "Handling": 0.5983264
+  }
+}

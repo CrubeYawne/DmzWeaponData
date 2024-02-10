@@ -1,0 +1,12 @@
+{
+  "filename": "basilisk.png",
+  "stats": {
+    "Damage": 0.610878646,
+    "FireRate": 0.414225936,
+    "Range": 0.24686192,
+    "Accuracy": 0.485355645,
+    "RecoilControl": 0.556485355,
+    "Mobility": 0.61924684,
+    "Handling": 0.5983264
+  }
+}

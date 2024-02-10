@@ -1,0 +1,12 @@
+{
+  "filename": "Strela-P.png",
+  "stats": {
+    "Damage": 0.9456067,
+    "FireRate": 0.384937227,
+    "Range": 0.548117161,
+    "Accuracy": 0.556485355,
+    "RecoilControl": 0.5523012,
+    "Mobility": 0.24686192,
+    "Handling": 0.322175741
+  }
+}

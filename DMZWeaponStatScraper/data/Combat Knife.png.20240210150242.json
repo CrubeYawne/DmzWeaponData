@@ -1,0 +1,12 @@
+{
+  "filename": "Combat Knife.png",
+  "stats": {
+    "Damage": 0.7949791,
+    "FireRate": 0.389121354,
+    "Range": 0.0502092056,
+    "Accuracy": 0.0,
+    "RecoilControl": 0.0,
+    "Mobility": 0.7364017,
+    "Handling": 0.5983264
+  }
+}

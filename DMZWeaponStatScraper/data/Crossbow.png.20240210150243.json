@@ -1,0 +1,12 @@
+{
+  "filename": "Crossbow.png",
+  "stats": {
+    "Damage": 0.7949791,
+    "FireRate": 0.368200839,
+    "Range": 0.372384936,
+    "Accuracy": 0.217573225,
+    "RecoilControl": 0.707112968,
+    "Mobility": 0.439330548,
+    "Handling": 0.481171548
+  }
+}
