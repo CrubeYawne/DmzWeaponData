@@ -79,25 +79,23 @@ namespace DMZWeaponStatScraper
                     string shortName = System.IO.Path.GetFileName(file);
 
                     SavedStat newStat = new SavedStat();
-                    newStat.filename = shortName;
-                    
-                    
+                    newStat.filename = shortName;                    
 
                     foreach (StatSection ss in sections)
                     {
                         float stat_value = 0;
 
-                        List<Color> row_list = new List<Color>();
+                        List<Color> rowPixels = new List<Color>();
 
                         for (int x = STAT_START_X; x <= STAT_END_X; ++x)
                         {
-                            row_list.Add(img.GetPixel(x, ss.y));
+                            rowPixels.Add(img.GetPixel(x, ss.y));
                         }
 
-                        for(int i=0; i != row_list.Count; ++i)
+                        for(int i=0; i != rowPixels.Count; ++i)
                         {
 
-                            if (row_list[i].R > minimum_invalid_red && row_list[i].G < 100 && row_list[i].B < 100)
+                            if (rowPixels[i].R > minimum_invalid_red && rowPixels[i].G < 100 && rowPixels[i].B < 100)
                             {
                                 Console.WriteLine("Break on red " + ss.name);
                                 break;
@@ -105,15 +103,15 @@ namespace DMZWeaponStatScraper
 
                             bool isValidPixelValue = false;
 
-                            if (row_list[i].G > minimum_valid_green)
+                            if (rowPixels[i].G > minimum_valid_green)
                                 isValidPixelValue = true;
-                            else if (row_list[i].GetBrightness() >= minimum_valid_brightness)                            
+                            else if (rowPixels[i].GetBrightness() >= minimum_valid_brightness)                            
                                 isValidPixelValue = true;
                             
 
                             if (isValidPixelValue)
                             {
-                                stat_value = (float)i / (float)row_list.Count();
+                                stat_value = (float)i / (float)rowPixels.Count();
                             }
 
                         }
